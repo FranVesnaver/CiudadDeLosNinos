@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.MainController"
+      stylesheets="@styles.css"
+      spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+    <Label text="Bienvenido a Ciudad de los niños" wrapText="true"/>
+    <Button text="Insertar padrino" onAction="#insertarPadrino" wrapText="true"/>
+    <Button text="Eliminar padrino" onAction="#eliminarPadrino" wrapText="true"/>
+    <Button text="Ver aportes" onAction="#verAportes" wrapText="true"/>
+</VBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.VerAportesController"
+      stylesheets="@styles.css"
+      minHeight="520" minWidth="400" spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+
+    <TableView fx:id="tablaAportes" VBox.vgrow="ALWAYS">
+            <columns>
+                    <TableColumn fx:id="colDni" text="DNI"/>
+                    <TableColumn fx:id="colApellido" text="Apellido"/>
+                    <TableColumn fx:id="colNombre" text="Nombre"/>
+                    <TableColumn fx:id="colPrograma" text="Programa"/>
+            </columns>
+    </TableView>
+    <Button text="Volver" onAction="#volver"/>
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true" textAlignment="CENTER"/>
+</VBox>
