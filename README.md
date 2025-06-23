@@ -1,9 +1,12 @@
 
 # PROYECTO: Ciudad de los Niños – Sistema de Donaciones
 
-## Requisitos
-- Java 17 o superior
-- PostgreSQL 14 o superior
+## Tecnologías
+- Java 17 
+- PostgreSQL 14
+- Maven
+- JDBC
+- JavaFX
 
 
 ## Pasos para configurar la base de datos
