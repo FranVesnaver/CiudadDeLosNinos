@@ -4,8 +4,8 @@
 ## Tecnologías
 - Java 17 
 - PostgreSQL 14
+- JDBC (utilizando el driver [pgjdb](https://github.com/pgjdbc/pgjdbc))
 - Maven
-- JDBC
 - JavaFX
 
 
