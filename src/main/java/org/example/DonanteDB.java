@@ -2,7 +2,7 @@ package org.example;
 
 import java.sql.Date;
 
-public class Donante {
+public class DonanteDB {
     String dniDonante;
     String direccion;
     String nombre;
@@ -15,9 +15,9 @@ public class Donante {
     String ocupacion;
     String cuilCuit;
 
-    public Donante(){}
+    public DonanteDB(){}
 
-    public Donante(String dniDonante, String direccion, String nombre, String apellido, String email, String facebook, String telFijo, String telCelular, Date fechaNac, String ocupacion, String cuilCuit) {
+    public DonanteDB(String dniDonante, String direccion, String nombre, String apellido, String email, String facebook, String telFijo, String telCelular, Date fechaNac, String ocupacion, String cuilCuit) {
         this.dniDonante = dniDonante;
         this.direccion = direccion;
         this.nombre = nombre;

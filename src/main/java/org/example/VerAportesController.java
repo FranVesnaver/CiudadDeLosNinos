@@ -15,12 +15,12 @@ import java.sql.Statement;
 
 public class VerAportesController {
 
-    @FXML private TableView<Aporte> tablaAportes;
+    @FXML private TableView<ObservableAporte> tablaAportes;
 
-    @FXML private TableColumn<Aporte, String> colDni;
-    @FXML private TableColumn<Aporte, String> colNombre;
-    @FXML private TableColumn<Aporte, String> colApellido;
-    @FXML private TableColumn<Aporte, String> colPrograma;
+    @FXML private TableColumn<ObservableAporte, String> colDni;
+    @FXML private TableColumn<ObservableAporte, String> colNombre;
+    @FXML private TableColumn<ObservableAporte, String> colApellido;
+    @FXML private TableColumn<ObservableAporte, String> colPrograma;
 
     @FXML private Label errorLabel;
 
@@ -54,10 +54,10 @@ public class VerAportesController {
         try (Statement statement = SQLConnection.getConnection().createStatement();
              ResultSet result = statement.executeQuery(query)) {
 
-            ObservableList<Aporte> aportes = FXCollections.observableArrayList();
+            ObservableList<ObservableAporte> aportes = FXCollections.observableArrayList();
 
             while (result.next()) {
-                aportes.add(new Aporte (
+                aportes.add(new ObservableAporte(
                         result.getString("dni_donante"),
                         result.getString("nombre"),
                         result.getString("apellido"),

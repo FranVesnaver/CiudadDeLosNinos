@@ -3,13 +3,13 @@ package org.example;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class Aporte {
+public class ObservableAporte {
     private final StringProperty dniDonante;
     private final StringProperty nombre;
     private final StringProperty apellido;
     private final StringProperty programa;
 
-    public Aporte(String dniDonante, String nombre, String apellido, String programa) {
+    public ObservableAporte(String dniDonante, String nombre, String apellido, String programa) {
         this.dniDonante = new SimpleStringProperty(dniDonante);
         this.nombre = new SimpleStringProperty(nombre);
         this.apellido = new SimpleStringProperty(apellido);

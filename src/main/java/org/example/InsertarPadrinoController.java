@@ -34,7 +34,7 @@ public class InsertarPadrinoController {
 
     @FXML
     public void insertarPadrino(){
-        Donante padrino;
+        DonanteDB padrino;
         try {
             padrino = generarPadrino();
 
@@ -64,7 +64,7 @@ public class InsertarPadrinoController {
         }
     }
 
-    private Donante generarPadrino() throws IllegalArgumentException{
+    private DonanteDB generarPadrino() throws IllegalArgumentException{
 
         String input;
 
@@ -109,7 +109,7 @@ public class InsertarPadrinoController {
 
         String cuilCuit = validarCampoObligatorio(campoCuilCuit);
 
-        return new Donante(dniDonante,direccion,nombre,apellido,email,facebook,telFijo,telCelular,fechaNac,ocupacion,cuilCuit);
+        return new DonanteDB(dniDonante,direccion,nombre,apellido,email,facebook,telFijo,telCelular,fechaNac,ocupacion,cuilCuit);
     }
 
     private static String validarCampoObligatorio(TextField campo) {
