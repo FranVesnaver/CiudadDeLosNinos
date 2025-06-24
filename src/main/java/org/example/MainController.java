@@ -18,6 +18,11 @@ public class MainController {
     }
 
     @FXML
+    private void verPadrinos() throws IOException {
+        App.changeScene("ver_padrinos", "Padrinos");
+    }
+
+    @FXML
     private void verAportes() throws IOException {
         App.changeScene("ver_aportes", "Aportes");
     }

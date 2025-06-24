@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.FichaController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label fx:id="dniLabel"/>
+    <Label fx:id="nombreLabel"/>
+    <Label fx:id="apellidoLabel"/>
+    <Label fx:id="direccionLabel"/>
+    <Label fx:id="emailLabel"/>
+    <Label fx:id="facebookLabel"/>
+    <Label fx:id="telFijoLabel"/>
+    <Label fx:id="telCelularLabel"/>
+    <Label fx:id="fechaNacimientoLabel"/>
+    <Label fx:id="ocupacionLabel"/>
+    <Label fx:id="cuilCuitLabel"/>
+    <Button text="Volver" onAction="#volver"/>
+
+    <Label fx:id="errorLabel" wrapText="true" style="error-label"/>
+</VBox>

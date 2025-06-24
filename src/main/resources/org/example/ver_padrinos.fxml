@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.VerPadrinosController"
+      stylesheets="@styles.css"
+      spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+    <Label text="Haz doble click en una entrada para ver más información" wrapText="true"/>
+
+    <TableView VBox.vgrow="ALWAYS" fx:id="tabla">
+            <columns>
+                <TableColumn text="DNI" fx:id="colDni"/>
+                <TableColumn text="Nombre" fx:id="colNombre"/>
+                <TableColumn text="Apellido" fx:id="colApellido"/>
+            </columns>
+    </TableView>
+    <Button text="Volver" onAction="#volver"/>
+    <Label fx:id="errorLabel" wrapText="true" styleClass="error-label" textAlignment="CENTER"/>
+</VBox>
