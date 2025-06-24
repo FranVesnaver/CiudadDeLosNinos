@@ -20,7 +20,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         mainWindow = stage;
-        Scene scene = new Scene(loadFXML("main"), 400, 520);
+        Scene scene = new Scene(loadFXML("main"), 400, 570);
         stage.setTitle("Ciudad de los niños");
         stage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
         stage.setScene(scene);
@@ -33,7 +33,7 @@ public class App extends Application {
     }
 
     public static void changeScene(String fxml, String title) throws IOException {
-        Scene scene = new Scene(loadFXML(fxml), 400, 520);
+        Scene scene = new Scene(loadFXML(fxml), 400, 570);
         mainWindow.setScene(scene);
         mainWindow.setTitle(title);
     }

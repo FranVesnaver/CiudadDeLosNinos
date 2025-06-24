@@ -10,7 +10,7 @@
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.example.InsertarPadrinoController"
       stylesheets="@styles.css"
-      minWidth="400" minHeight="520" spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+      minWidth="400" minHeight="570" spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
 
     <Label text="Inserte los datos del padrino a insertar: "/>
