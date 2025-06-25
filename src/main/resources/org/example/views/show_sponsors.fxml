@@ -5,19 +5,19 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.VerPadrinosController"
-      stylesheets="@styles.css"
+      fx:controller="org.example.controller.ShowSponsorsController"
+      stylesheets="@../css/styles.css"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
     <Label text="Haz doble click en una entrada para ver más información" wrapText="true"/>
 
-    <TableView VBox.vgrow="ALWAYS" fx:id="tabla">
+    <TableView VBox.vgrow="ALWAYS" fx:id="table">
             <columns>
-                <TableColumn text="DNI" fx:id="colDni"/>
-                <TableColumn text="Nombre" fx:id="colNombre"/>
-                <TableColumn text="Apellido" fx:id="colApellido"/>
+                <TableColumn text="DNI" fx:id="dniColumn"/>
+                <TableColumn text="Nombre" fx:id="firstNameColumn"/>
+                <TableColumn text="Apellido" fx:id="lastNameColumn"/>
             </columns>
     </TableView>
-    <Button text="Volver" onAction="#volver"/>
+    <Button text="Volver" onAction="#goBack"/>
     <Label fx:id="errorLabel" wrapText="true" styleClass="error-label" textAlignment="CENTER"/>
 </VBox>

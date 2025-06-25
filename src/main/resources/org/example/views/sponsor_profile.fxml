@@ -5,21 +5,21 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.FichaController"
+      fx:controller="org.example.controller.SponsorProfileController"
       spacing="10" alignment="CENTER" style="-fx-padding: 20;">
 
     <Label fx:id="dniLabel"/>
-    <Label fx:id="nombreLabel"/>
-    <Label fx:id="apellidoLabel"/>
-    <Label fx:id="direccionLabel"/>
+    <Label fx:id="firstNameLabel"/>
+    <Label fx:id="lastNameLabel"/>
+    <Label fx:id="addressLabel"/>
     <Label fx:id="emailLabel"/>
     <Label fx:id="facebookLabel"/>
-    <Label fx:id="telFijoLabel"/>
-    <Label fx:id="telCelularLabel"/>
-    <Label fx:id="fechaNacimientoLabel"/>
-    <Label fx:id="ocupacionLabel"/>
+    <Label fx:id="landlineLabel"/>
+    <Label fx:id="mobileLabel"/>
+    <Label fx:id="birthDateLabel"/>
+    <Label fx:id="occupationLabel"/>
     <Label fx:id="cuilCuitLabel"/>
-    <Button text="Volver" onAction="#volver"/>
+    <Button text="Volver" onAction="#goBack"/>
 
     <Label fx:id="errorLabel" wrapText="true" style="error-label"/>
 </VBox>

@@ -22,13 +22,13 @@ public class App extends Application {
         mainWindow = stage;
         Scene scene = new Scene(loadFXML("main"), 400, 570);
         stage.setTitle("Ciudad de los niños");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("assets/icon.png")));
         stage.setScene(scene);
         stage.show();
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("views/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
@@ -38,7 +38,7 @@ public class App extends Application {
         mainWindow.setTitle(title);
     }
 
-    public static void volver() throws IOException {
+    public static void goBack() throws IOException {
         changeScene("main", "Ciudad de los niños");
     }
 

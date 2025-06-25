@@ -7,16 +7,16 @@
 <?import javafx.scene.control.Button?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.EliminarPadrinoController"
-      stylesheets="@styles.css"
+      fx:controller="org.example.controller.DeleteSponsorController"
+      stylesheets="@../css/styles.css"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
     <Label text="Ingrese el DNI del padrino a eliminar:"/>
-    <TextField fx:id="campoDni" promptText="DNI"/>
+    <TextField fx:id="dniField" promptText="DNI"/>
 
     <HBox spacing="20" alignment="CENTER">
-        <Button text="Cancelar" onAction="#volver"/>
-        <Button text="Eliminar padrino" onAction="#eliminarPadrino"/>
+        <Button text="Cancelar" onAction="#goBack"/>
+        <Button text="Eliminar padrino" onAction="#deleteSponsor"/>
     </HBox>
     <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
 </VBox>

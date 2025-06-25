@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.AddSponsorController"
+      stylesheets="@../css/styles.css"
+      minWidth="400" minHeight="570" spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+
+    <Label text="Inserte los datos del padrino a insertar: "/>
+    <TextField promptText="DNI" fx:id="dniField" />
+    <TextField promptText="Nombre" fx:id="firstNameField" />
+    <TextField promptText="Apellido" fx:id="lastNameField"/>
+    <DatePicker promptText="Fecha de nacimiento" fx:id="birthDateField"/>
+    <TextField promptText="Dirección" fx:id="addressField"/>
+    <TextField promptText="Email" fx:id="emailField"/>
+    <TextField promptText="Facebook" fx:id="facebookField"/>
+    <TextField promptText="Telefono fijo" fx:id="landlineField"/>
+    <TextField promptText="Telefono celular" fx:id="mobileField"/>
+    <TextField promptText="Ocupación" fx:id="occupationField"/>
+    <TextField promptText="CUIL/CUIT" fx:id="cuilCuitField"/>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Cancelar" onAction="#goBack"/>
+        <Button text="Insertar padrino" onAction="#addSponsor"/>
+    </HBox>
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true" textAlignment="CENTER"/>
+</VBox>

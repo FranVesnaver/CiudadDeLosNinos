@@ -8,19 +8,19 @@
 <?import javafx.scene.control.TableView?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.VerAportesController"
-      stylesheets="@styles.css"
+      fx:controller="org.example.controller.ShowContributionsController"
+      stylesheets="@../css/styles.css"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
 
-    <TableView fx:id="tablaAportes" VBox.vgrow="ALWAYS">
+    <TableView fx:id="table" VBox.vgrow="ALWAYS">
             <columns>
-                    <TableColumn fx:id="colDni" text="DNI"/>
-                    <TableColumn fx:id="colApellido" text="Apellido"/>
-                    <TableColumn fx:id="colNombre" text="Nombre"/>
-                    <TableColumn fx:id="colPrograma" text="Programa"/>
+                    <TableColumn fx:id="dniColumn" text="DNI"/>
+                    <TableColumn fx:id="lastNameColumn" text="Apellido"/>
+                    <TableColumn fx:id="firstNameColumn" text="Nombre"/>
+                    <TableColumn fx:id="programColumn" text="Programa"/>
             </columns>
     </TableView>
-    <Button text="Volver" onAction="#volver"/>
+    <Button text="Volver" onAction="#goBack"/>
     <Label fx:id="errorLabel" styleClass="error-label" wrapText="true" textAlignment="CENTER"/>
 </VBox>

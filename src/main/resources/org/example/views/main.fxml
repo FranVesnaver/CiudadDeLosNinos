@@ -5,14 +5,14 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.MainController"
-      stylesheets="@styles.css"
+      fx:controller="org.example.controller.MainController"
+      stylesheets="@../css/styles.css"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
     <Label text="Bienvenido a Ciudad de los niños" wrapText="true"/>
-    <Button text="Insertar padrino" onAction="#insertarPadrino" wrapText="true"/>
-    <Button text="Eliminar padrino" onAction="#eliminarPadrino" wrapText="true"/>
+    <Button text="Insertar padrino" onAction="#addSponsor" wrapText="true"/>
+    <Button text="Eliminar padrino" onAction="#deleteSponsor" wrapText="true"/>
 <!--    <Button text="Insertar aporte" onAction="#insertarAporte" wrapText="true"/>-->
-    <Button text="Ver padrinos" onAction="#verPadrinos" wrapText="true"/>
-    <Button text="Ver aportes" onAction="#verAportes" wrapText="true"/>
+    <Button text="Ver padrinos" onAction="#showSponsors" wrapText="true"/>
+    <Button text="Ver aportes" onAction="#showContributions" wrapText="true"/>
 </VBox>

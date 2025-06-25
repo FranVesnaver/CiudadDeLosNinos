@@ -1,32 +1,34 @@
-package org.example;
+package org.example.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import org.example.App;
+import org.example.SQLConnection;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class EliminarPadrinoController {
+public class DeleteSponsorController {
 
-    @FXML private TextField campoDni;
+    @FXML private TextField dniField;
 
     @FXML private Label errorLabel;
 
     @FXML
-    public void volver() throws IOException {
-        App.volver();
+    public void goBack() throws IOException {
+        App.goBack();
     }
 
     @FXML
-    public void eliminarPadrino() throws IOException {
-        String dniAEliminar = campoDni.getText();
+    public void deleteSponsor() throws IOException {
+        String dniToDelete = dniField.getText();
 
         String query = "DELETE FROM ciudadDeLosNinos.donante WHERE dni_donante = ?";
 
         try (PreparedStatement statement = SQLConnection.getConnection().prepareStatement(query)) {
-            statement.setString(1, dniAEliminar);
+            statement.setString(1, dniToDelete);
             int rowCount = statement.executeUpdate();
 
             if (rowCount <= 0) {
