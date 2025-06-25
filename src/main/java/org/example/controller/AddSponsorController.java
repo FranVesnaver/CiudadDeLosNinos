@@ -58,7 +58,7 @@ public class AddSponsorController {
                 statement.setString(11, padrino.getCuilCuit());
 
                 statement.executeUpdate();
-                App.changeScene("main", "Ciudad de los niños");
+                App.goBack();
             } catch (SQLException | IOException e) {
                 errorLabel.setText("ERORR: " + e.getMessage());
             }

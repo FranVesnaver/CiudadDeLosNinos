@@ -19,6 +19,11 @@ public class MainController {
     }
 
     @FXML
+    private void addContribution() throws IOException {
+        App.changeScene("add_contribution", "Insertar aporte");
+    }
+
+    @FXML
     private void showSponsors() throws IOException {
         App.changeScene("show_sponsors", "Padrinos");
     }

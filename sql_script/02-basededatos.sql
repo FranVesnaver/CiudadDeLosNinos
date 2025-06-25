@@ -51,7 +51,7 @@ CREATE TABLE Aporta (
     frecuencia VARCHAR(100),
 	nro_pago INT,
 	CONSTRAINT tipo_frecuencia
-		CHECK (frecuencia IN('mensual', 'semestral')),
+		CHECK (frecuencia IN('Mensual', 'Semestral')),
     PRIMARY KEY (dni_donante, id_programa),
     FOREIGN KEY (dni_donante) REFERENCES Donante(dni_donante)
         ON DELETE CASCADE ON UPDATE CASCADE,
@@ -107,3 +107,4 @@ CREATE TRIGGER trg_auditoria_donante
 BEFORE DELETE ON ciudadDeLosNinos.Donante
 FOR EACH ROW
 EXECUTE FUNCTION auditoria_eliminar_donante();
+

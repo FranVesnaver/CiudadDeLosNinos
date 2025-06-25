@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ComboBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.AddContributionController"
+      stylesheets="@../css/styles.css"
+      spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+    <VBox styleClass="add-contribution-container" spacing="10" alignment="CENTER">
+        <TextField fx:id="sponsorDniField" promptText="DNI padrino"/>
+        <MenuButton text="Programa a aportar" fx:id="programsMenu" maxWidth="Infinity"/>
+        <TextField fx:id="amountField" promptText="Monto"/>
+        <ComboBox fx:id="frequencyComboBox" promptText="Frecuencia" maxWidth="Infinity"/>
+        <Button onAction="#setPaymentMethod" text="Establecer método de pago..."/>
+    </VBox>
+
+    <HBox alignment="BOTTOM_CENTER" spacing="10">
+        <Button text="Cancelar" onAction="#goBack"/>
+        <Button text="Agregar aporte" onAction="#addContribution"/>
+    </HBox>
+
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true" alignment="CENTER"/>
+</VBox>

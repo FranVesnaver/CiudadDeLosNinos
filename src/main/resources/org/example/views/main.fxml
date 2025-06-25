@@ -12,7 +12,7 @@
     <Label text="Bienvenido a Ciudad de los niños" wrapText="true"/>
     <Button text="Insertar padrino" onAction="#addSponsor" wrapText="true"/>
     <Button text="Eliminar padrino" onAction="#deleteSponsor" wrapText="true"/>
-<!--    <Button text="Insertar aporte" onAction="#insertarAporte" wrapText="true"/>-->
+    <Button text="Insertar aporte" onAction="#addContribution" wrapText="true"/>
     <Button text="Ver padrinos" onAction="#showSponsors" wrapText="true"/>
     <Button text="Ver aportes" onAction="#showContributions" wrapText="true"/>
 </VBox>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@../css/styles.css"
+      fx:controller="org.example.controller.SetPaymentMethodController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 30;">
+
+    <Label text="Inserte datos de la tarjeta de crédito"/>
+    <TextField promptText="Número de tarjeta" fx:id="cardNumberField"/>
+    <ComboBox promptText="Visa/Mastercard" fx:id="visaMastercard" maxWidth="Infinity"/>
+    <TextField promptText="Nombre del titular" fx:id="cardholderNameField"/>
+    <DatePicker promptText="Fecha de vencimiento" fx:id="expirationDateField" maxWidth="Infinity"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Cancelar" onAction="#cancel"/>
+        <Button text="Añadir método de pago" onAction="#addPaymentMethod"/>
+    </HBox>
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true" alignment="CENTER"/>
+
+</VBox>

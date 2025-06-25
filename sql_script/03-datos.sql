@@ -25,21 +25,21 @@ INSERT INTO Contacto (dni_contacto, direccion, nombre, apellido, email, facebook
 	('32893098', 'San Marcos', 'Mario', 'Garriga', 'magarriga@gmail.com', 'magarriga', '03584890387', '3584094829', '1988-05-13', 'Voluntario', '2025-03-15', '2025-03-30', '2025-04-01');
 
 -- Medios de pago
-INSERT INTO MedioDePago (nro_pago, nombre_titular) VALUES 
-	(1,'Juan Pérez'), 
-	(2,'María Gómez'),
-	(3,'Marta Sanchez'),
-	(4,'Marcos Acuña'),
-	(5,'Sebastian Driussi'),
-	(6,'Franco Bernabe'),
-	(7,'Luis Gonzalez'),
-	(8,'Valentin Vilas'),
-	(9,'Francisco Burzaco'),
-	(10,'Augusto Lezcano'),
-	(11,'Valentin Vilas'),
-	(12,'Valentin Vilas'), 
-	(13,'Luis Gonzalez'),
-	(14,'Luis Gonzalez');
+INSERT INTO MedioDePago (nombre_titular) VALUES 
+	('Juan Pérez'), 
+	('María Gómez'),
+	('Marta Sanchez'),
+	('Marcos Acuña'),
+	('Sebastian Driussi'),
+	('Franco Bernabe'),
+	('Luis Gonzalez'),
+	('Valentin Vilas'),
+	('Francisco Burzaco'),
+	('Augusto Lezcano'),
+	('Valentin Vilas'),
+	('Valentin Vilas'), 
+	('Luis Gonzalez'),
+	('Luis Gonzalez');
 	
 -- Credito
 INSERT INTO Credito VALUES 
@@ -48,6 +48,7 @@ INSERT INTO Credito VALUES
 	(4, '2029-09-13', 'Visa', '4739516632098573', 'Marcos Acuña'),
 	(6, '2031-08-01', 'Visa', '3758297477777895', 'Franco Bernabe'),
 	(9, '2027-06-30', 'Mastercard', '6493250509647364', 'Francisco Burzaco');
+
 
 -- Débito/Transferencia
 INSERT INTO Debito_Transferencia VALUES 
@@ -63,17 +64,17 @@ INSERT INTO Debito_Transferencia VALUES
 
 -- Aportes
 INSERT INTO Aporta (dni_donante, id_programa, monto, frecuencia, nro_pago) VALUES
-	('12345678', 1, 3000.00, 'mensual', 1),
-	('87654321', 2, 2000.00, 'mensual', 2),
-	('11111111', 3, 6500.00, 'semestral', 3),
-	('22222222', 3, 2500.00, 'semestral', 4),
-	('33333333', 2, 8000.00, 'mensual', 5),
-	('45383749', 3, 2300.00, 'semestral', 6),
-	('44374637', 3, 2500.00, 'mensual', 8),
-	('46837948', 1, 10000.00, 'semestral', 7),
-	('46104873', 1, 8000.00, 'semestral', 9),
-	('46110472', 1, 7000.00, 'semestral', 10),
-	('44374637', 2, 8000.00, 'semestral', 11),
-	('44374637', 1, 8500.00, 'semestral', 12),
-	('46837948', 3, 11000.00, 'semestral', 13),
-	('46837948', 2, 15000.00, 'mensual', 14);
+	('12345678', 1, 3000.00, 'Mensual', 1),
+	('87654321', 2, 2000.00, 'Mensual', 2),
+	('11111111', 3, 6500.00, 'Semestral', 3),
+	('22222222', 3, 2500.00, 'Semestral', 4),
+	('33333333', 2, 8000.00, 'Mensual', 5),
+	('45383749', 3, 2300.00, 'Semestral', 6),
+	('44374637', 3, 2500.00, 'Mensual', 8),
+	('46837948', 1, 10000.00, 'Semestral', 7),
+	('46104873', 1, 8000.00, 'Semestral', 9),
+	('46110472', 1, 7000.00, 'Semestral', 10),
+	('44374637', 2, 8000.00, 'Semestral', 11),
+	('44374637', 1, 8500.00, 'Semestral', 12),
+	('46837948', 3, 11000.00, 'Semestral', 13),
+	('46837948', 2, 15000.00, 'Mensual', 14);

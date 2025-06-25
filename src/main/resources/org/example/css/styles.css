@@ -1,3 +1,9 @@
 .error-label {
     -fx-text-fill: red;
 }
+
+.add-contribution-container {
+    -fx-background-color: #e6e6e6;
+    -fx-padding: 20;
+    -fx-background-radius: 8;
+}
