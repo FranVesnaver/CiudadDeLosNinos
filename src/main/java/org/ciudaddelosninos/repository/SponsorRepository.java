@@ -1,4 +1,4 @@
-package org.example.repository;
+package org.ciudaddelosninos.repository;
 
 import java.sql.Date;
 

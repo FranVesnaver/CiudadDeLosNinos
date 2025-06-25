@@ -1,19 +1,17 @@
-package org.example.model;
+package org.ciudaddelosninos.model;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class ObservableContribution {
+public class ObservableSponsor {
     private final StringProperty dni;
     private final StringProperty firstName;
     private final StringProperty lastName;
-    private final StringProperty program;
 
-    public ObservableContribution(String dni, String firstName, String lastName, String program) {
+    public ObservableSponsor(String dni, String firstName, String lastName) {
         this.dni = new SimpleStringProperty(dni);
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
-        this.program = new SimpleStringProperty(program);
     }
 
     public String getDni() {
@@ -26,9 +24,5 @@ public class ObservableContribution {
 
     public String getLastName() {
         return lastName.get();
-    }
-
-    public String getProgram() {
-        return program.get();
     }
 }

@@ -1,7 +1,7 @@
-package org.example.controller;
+package org.ciudaddelosninos.controller;
 
 import javafx.fxml.FXML;
-import org.example.App;
+import org.ciudaddelosninos.App;
 
 import java.io.IOException;
 

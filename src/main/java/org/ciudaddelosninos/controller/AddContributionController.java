@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.ciudaddelosninos.controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,9 +9,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.example.App;
-import org.example.SQLConnection;
-import org.example.model.ObservableProgram;
+import org.ciudaddelosninos.App;
+import org.ciudaddelosninos.SQLConnection;
+import org.ciudaddelosninos.model.ObservableProgram;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;

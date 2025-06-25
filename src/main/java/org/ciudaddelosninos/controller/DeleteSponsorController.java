@@ -1,10 +1,10 @@
-package org.example.controller;
+package org.ciudaddelosninos.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import org.example.App;
-import org.example.SQLConnection;
+import org.ciudaddelosninos.App;
+import org.ciudaddelosninos.SQLConnection;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;

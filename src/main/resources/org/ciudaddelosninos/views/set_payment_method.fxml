@@ -10,7 +10,7 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       stylesheets="@../css/styles.css"
-      fx:controller="org.example.controller.SetPaymentMethodController"
+      fx:controller="org.ciudaddelosninos.controller.SetPaymentMethodController"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
     <Label text="Inserte datos de la tarjeta de crédito"/>

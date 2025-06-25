@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.ciudaddelosninos.controller;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -8,9 +8,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
-import org.example.App;
-import org.example.SQLConnection;
-import org.example.model.ObservableSponsor;
+import org.ciudaddelosninos.App;
+import org.ciudaddelosninos.SQLConnection;
+import org.ciudaddelosninos.model.ObservableSponsor;
 
 import java.io.IOException;
 import java.sql.ResultSet;
