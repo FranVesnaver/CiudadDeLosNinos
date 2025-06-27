@@ -39,10 +39,10 @@ public class ShowContributionsController {
         lastNameColumn.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getLastName()));
         programColumn.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProgram()));
 
-        dniColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.2));
+        dniColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.25));
         firstNameColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.2));
         lastNameColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.2));
-        programColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.4));
+        programColumn.prefWidthProperty().bind(table.widthProperty().multiply(0.34));
 
         showContributions();
     }

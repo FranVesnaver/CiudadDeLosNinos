@@ -17,7 +17,7 @@
     <TextField promptText="DNI" fx:id="dniField" />
     <TextField promptText="Nombre" fx:id="firstNameField" />
     <TextField promptText="Apellido" fx:id="lastNameField"/>
-    <DatePicker promptText="Fecha de nacimiento" fx:id="birthDateField"/>
+    <DatePicker promptText="Fecha de nacimiento" fx:id="birthDateField" maxWidth="Infinity"/>
     <TextField promptText="Dirección" fx:id="addressField"/>
     <TextField promptText="Email" fx:id="emailField"/>
     <TextField promptText="Facebook" fx:id="facebookField"/>

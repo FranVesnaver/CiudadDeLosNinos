@@ -3,16 +3,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.ciudaddelosninos.controller.MainController"
       stylesheets="@../css/styles.css"
       spacing="10" alignment="CENTER" style="-fx-padding: 30;">
 
-    <Label text="Bienvenido a Ciudad de los niños" wrapText="true"/>
-    <Button text="Insertar padrino" onAction="#addSponsor" wrapText="true"/>
-    <Button text="Eliminar padrino" onAction="#deleteSponsor" wrapText="true"/>
-    <Button text="Insertar aporte" onAction="#addContribution" wrapText="true"/>
-    <Button text="Ver padrinos" onAction="#showSponsors" wrapText="true"/>
-    <Button text="Ver aportes" onAction="#showContributions" wrapText="true"/>
+    <VBox alignment="CENTER" spacing="12" maxWidth="206" maxHeight="358">
+        <ImageView preserveRatio="true">
+            <Image url="@../assets/logo.png" requestedHeight="101" requestedWidth="86" smooth="true"/>
+        </ImageView>
+        <Label text="Bienvenido a Ciudad de los niños" wrapText="true"/>
+        <Button text="Insertar padrino" onAction="#addSponsor"/>
+        <Button text="Eliminar padrino" onAction="#deleteSponsor"/>
+        <Button text="Insertar aporte" onAction="#addContribution"/>
+        <Button text="Ver padrinos" onAction="#showSponsors"/>
+        <Button text="Ver aportes" onAction="#showContributions"/>
+    </VBox>
 </VBox>
