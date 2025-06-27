@@ -73,7 +73,7 @@ public class ShowSponsorsController {
 
             table.setItems(sponsors);
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            errorLabel.setText("ERORR: " + e.getMessage());
         }
     }
 

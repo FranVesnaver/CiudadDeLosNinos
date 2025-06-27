@@ -1,8 +1,14 @@
 -- Insertar programas
-INSERT INTO Programa (id_programa, nombre, descripcion) VALUES
-	(1,'Programa Escolar', 'Apoyo escolar'),
-	(2,'Taller de Oficios', 'Capacitación práctica'),
-	(3,'Vida en Familia', 'Hogar para niños');
+INSERT INTO Programa (nombre, descripcion) VALUES
+	('Pasito a pasito', 'Crianza'),
+	('Raíces', 'Re vinculacion familiar y formación espiritual'),
+	('Sana sana', 'Salud integral'),
+	('Trapitos al sol', 'Vestimenta'),
+	('Nuestro lugar', 'Ambiente saludable'),
+	('Leer, pensar, aprender', 'Escolaridad formal'),
+	('De la semilla a la mesa', 'Nutrición'),
+	('Aprender jugando', 'Recreación y vida cultural'),
+	('Abriendose a la vida', 'Talleres de capacitaciones');
 
 -- Donantes
 INSERT INTO Donante (dni_donante, direccion, nombre, apellido, email, facebook, tel_fijo, tel_celular, fecha_nac, ocupacion, cuil_cuit) VALUES
